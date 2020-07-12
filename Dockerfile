@@ -7,7 +7,7 @@ ADD Gemfile /app/
 ADD Gemfile.lock /app/
 
 RUN apk --update add --virtual build-deps build-base ruby-dev \
-    && gem install bundler --no-ri --no-rdoc \
+    && gem install bundler \
     && cd /app \
     && bundle install \
     && apk del build-deps
