@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.15.0
 MAINTAINER technolengy@gmail.com
 
 RUN apk update && apk --update add ruby ruby-irb ruby-io-console tzdata ca-certificates
