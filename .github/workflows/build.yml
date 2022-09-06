@@ -16,7 +16,7 @@ jobs:
 
     name: Build and push docker image
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 1
 
